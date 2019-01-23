@@ -43,7 +43,7 @@ namespace Projeto01.Repositories
 
         public List<Produto> Consultar()
         {
-            Command = new SqlCommand("SpConsultarProduto", Connection);
+            Command = new SqlCommand("SpConsultarProdutos", Connection);
             Command.CommandType = CommandType.StoredProcedure;
 
             DataReader = Command.ExecuteReader();
